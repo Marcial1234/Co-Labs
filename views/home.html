@@ -12,11 +12,6 @@
     <link rel="stylesheet" type="text/css" href="/s/parsley.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.2/parsley.js"></script>    
     <style type="text/css">
-        #intro, #learn, #join, #aboutus
-        {
-            height: 100%;
-            width: 100%;
-        }
         .circle 
         { 
             width: 150px;
@@ -69,13 +64,13 @@
         </div>
     </nav>
 
-    <div id="intro" class="container intro-section">
+    <div id="intro" class="container">
         <h1 id="greeting">Coding. Searching. Collaborating. All in one tab.</h1>
         <br>
         <a class="btn-circle page-scroll fa fa-angle-double-down animated" href="#learn"></a>
     </div>
-    <div id="codingXp" class="container learn-section"></div>
-    <div id="learn" class="container learn-section">
+    <div id="codingXp" class="container"></div>
+    <div id="learn" class="container">
         <h1>Learn</h1>
         <p>In an impersonal world populated by tab-ridden browsers, CoLabs provides
         a sleek interface </p><p>that allows developers to research and code together, all in one tab.</p>
@@ -84,7 +79,7 @@
         <a class="btn-circle page-scroll fa fa-angle-double-down animated" href="#join"></a>
     </div>
 
-    <div id="join" class="go-section">
+    <div id="join">
         {% block maincontent %}{% endblock %}
     </div>
 
