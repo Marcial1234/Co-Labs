@@ -378,13 +378,13 @@ class DeleteLabHandler(webapp2.RequestHandler):
 
 # End labs
 
-class YoutubeHandler(BaseHandler):
-	@user_required
-	def get(self):
-		params = {
-			'api_key': config['apis']['youtube']['key']
-		}
-		self.render_template('youtube', params)
+# class YoutubeHandler(BaseHandler):
+# 	@user_required
+# 	def get(self):
+# 		params = {
+# 			'api_key': config['apis']['youtube']['key']
+# 		}
+# 		self.render_template('youtube', params)
 
 routes = [
 		webapp2.Route('/', MainHandler, name='home'),
@@ -402,7 +402,7 @@ routes = [
 		webapp2.Route('/login', LoginHandler, name='login'),
 		webapp2.Route('/logout', LogoutHandler, name='logout'),
 		webapp2.Route('/forgot', ForgotPasswordHandler, name='forgot'),
-		webapp2.Route('/youtube', YoutubeHandler, name='youtube'),
+		# webapp2.Route('/youtube', YoutubeHandler, name='youtube'),
 		webapp2.Route("/profile", MainHandler),
 		("/.*", NotFoundHandler),
 ]
